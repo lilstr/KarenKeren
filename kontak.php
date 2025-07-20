@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Dusun Karen</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <!-- Logo gambar di samping judul -->
+            <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
+            <div class="logo-text">
+                <h1>Dusun Karen</h1>
+                <p>Desa Surojoyo Kecamatan Candimulyo</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.php" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="profil.php"><i class="fas fa-info-circle"></i> Profil</a></li>
+                <li><a href="galeri.php"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="umkm.php"><i class="fas fa-store"></i> UMKM</a></li>
+                <li><a href="budaya.php"><i class="fas fa-monument"></i> Budaya</a></li>
+                <li><a href="kontak.php"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/sec-hero.jpg');">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Hubungi Kami</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Kami siap menjawab pertanyaan dan menerima masukan Anda</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Contact Information -->
+        <section class="contact-info-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-info-circle"></i> Informasi Kontak</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Alamat</h3>
+                        <p>Dusun Karen, Desa Surojoyo<br>Kecamatan Candimulyo, Kabupaten Magelang<br>Jawa Tengah, Indonesia 56191</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Telepon</h3>
+                        <p>+62 821-4521-9022 (Kepala Dusun)<br>+62 821-4521-9022 (WhatsApp)</p>
+                        <a href="tel:+621234567890" class="btn-call">Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Location Map -->
+        <section class="map-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-map-marked-alt"></i> Peta Lokasi</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="embed-map-container">
+                <iframe src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Karen%20Surojoyo%20Kec.%20Candimulyo%20Kabupaten%20Magelang%20Jawa%20Tengah&t=k&z=14&ie=UTF8&iwloc=B&output=embed" 
+                        class="embed-map-frame" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0"  
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Dusun Karen</h4>
+                    <p>Dusun Karen adalah desa wisata yang kaya akan budaya dan keindahan alam. Kami mempertahankan tradisi sambil berkembang bersama zaman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="profil.php">Profil Desa</a></li>
+                        <li><a href="berita.php">Berita Terkini</a></li>
+                        <li><a href="galeri.php">Galeri Foto</a></li>
+                        <li><a href="kontak.php">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i> +62 821-4521-9022</li>
+                        <li><i class="fas fa-envelope"></i> desasurojoyo.magelangkab.go.id</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosial Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/forji.4g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LS 2025 Dusun Karen. KKN UPN Veteran Yogyakarta.</p>
+                <p> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('show');
+        });
+
+        // Form Validation
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if(name === '' || email === '' || subject === '' || message === '') {
+                e.preventDefault();
+                alert('Harap lengkapi semua field!');
+            }
+        });
+    </script>
+</body>
+</html>

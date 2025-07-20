@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Dusun Karen - Desa Wisata Budaya</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <!-- Logo gambar di samping judul -->
+            <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
+            <div class="logo-text">
+                <h1>Dusun Karen</h1>
+                <p>Desa Surojoyo Kecamatan Candimulyo</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.php" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="profil.php"><i class="fas fa-info-circle"></i> Profil</a></li>
+                <li><a href="galeri.php"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="umkm.php"><i class="fas fa-store"></i> UMKM</a></li>
+                <li><a href="budaya.php"><i class="fas fa-monument"></i> Budaya</a></li>
+                <li><a href="kontak.php"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- UMKM Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/sec-hero.jpg');">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">UMKM Dusun Karen</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Mendukung produk lokal dan ekonomi kreatif masyarakat</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- UMKM Categories -->
+        <div class="umkm-categories animate__animated animate__fadeIn">
+            <div class="category-filter">
+                <button class="cat-btn active" data-category="all">Semua</button>
+                <button class="cat-btn" data-category="makanan">Makanan</button>
+                <button class="cat-btn" data-category="kerajinan">Kerajinan</button>
+                <button class="cat-btn" data-category="jasa">Jasa</button>
+                <button class="cat-btn" data-category="fashion">Fashion</button>
+            </div>
+        </div>
+
+        <!-- UMKM List (statis) -->
+        <div class="umkm-grid">
+            <div class="umkm-card animate__animated animate__fadeIn" data-category="kerajinan">
+                <div class="umkm-image">
+                    <img src="assets/images/umkm1.jpg" alt="Kerajinan Tangan Karen">
+                </div>
+                <div class="umkm-content">
+                    <h3>Kerajinan Tangan Karen</h3>
+                    <span class="umkm-category">Kerajinan</span>
+                    <p class="umkm-excerpt">Produk kerajinan tangan khas dusun dengan motif tradisional.</p>
+                    <div class="umkm-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Dusun Karen</span>
+                    </div>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="umkm-card animate__animated animate__fadeIn" data-category="makanan">
+                <div class="umkm-image">
+                    <img src="assets/images/umkm2.jpg" alt="Madu Hutan Karen">
+                </div>
+                <div class="umkm-content">
+                    <h3>Madu Hutan Karen</h3>
+                    <span class="umkm-category">Makanan</span>
+                    <p class="umkm-excerpt">Madu alami dari hutan sekitar dusun dengan kualitas premium.</p>
+                    <div class="umkm-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Dusun Karen</span>
+                    </div>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="umkm-card animate__animated animate__fadeIn" data-category="makanan">
+                <div class="umkm-image">
+                    <img src="assets/images/umkm3.jpg" alt="Kopi Dusun Karen">
+                </div>
+                <div class="umkm-content">
+                    <h3>Kopi Dusun Karen</h3>
+                    <span class="umkm-category">Makanan</span>
+                    <p class="umkm-excerpt">Kopi arabika yang ditanam di lereng gunung sekitar dusun.</p>
+                    <div class="umkm-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Dusun Karen</span>
+                    </div>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="umkm-card animate__animated animate__fadeIn" data-category="jasa">
+                <div class="umkm-image">
+                    <img src="assets/images/umkm4.jpg" alt="Jasa Transportasi Karen">
+                </div>
+                <div class="umkm-content">
+                    <h3>Jasa Transportasi Karen</h3>
+                    <span class="umkm-category">Jasa</span>
+                    <p class="umkm-excerpt">Layanan transportasi lokal untuk kebutuhan masyarakat dan wisatawan.</p>
+                    <div class="umkm-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Dusun Karen</span>
+                    </div>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="umkm-card animate__animated animate__fadeIn" data-category="fashion">
+                <div class="umkm-image">
+                    <img src="assets/images/umkm5.jpg" alt="Batik Karen">
+                </div>
+                <div class="umkm-content">
+                    <h3>Batik Karen</h3>
+                    <span class="umkm-category">Fashion</span>
+                    <p class="umkm-excerpt">Batik khas Dusun Karen dengan motif unik dan warna alami.</p>
+                    <div class="umkm-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Dusun Karen</span>
+                    </div>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Dusun Karen</h4>
+                    <p>Dusun Karen adalah desa wisata yang kaya akan budaya dan keindahan alam. Kami mempertahankan tradisi sambil berkembang bersama zaman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="profil.php">Profil Desa</a></li>
+                        <li><a href="berita.php">Berita Terkini</a></li>
+                        <li><a href="galeri.php">Galeri Foto</a></li>
+                        <li><a href="kontak.php">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i> +62 821-4521-9022</li>
+                        <li><i class="fas fa-envelope"></i> desasurojoyo.magelangkab.go.id</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosial Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/forji.4g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LS 2025 Dusun Karen. KKN UPN Veteran Yogyakarta.</p>
+                <p> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('show');
+        });
+
+        // UMKM Category Filter
+        const catButtons = document.querySelectorAll('.cat-btn');
+        const umkmCards = document.querySelectorAll('.umkm-card');
+        
+        catButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Set active button
+                catButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const category = button.getAttribute('data-category');
+                
+                // Filter UMKM cards
+                umkmCards.forEach(card => {
+                    if(category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Animate UMKM cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('animate__fadeIn');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.umkm-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

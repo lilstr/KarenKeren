@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto - Dusun Karen</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <!-- Logo gambar di samping judul -->
+            <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
+            <div class="logo-text">
+                <h1>Dusun Karen</h1>
+                <p>Desa Surojoyo Kecamatan Candimulyo</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.php" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="profil.php"><i class="fas fa-info-circle"></i> Profil</a></li>
+                <li><a href="galeri.php"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="umkm.php"><i class="fas fa-store"></i> UMKM</a></li>
+                <li><a href="budaya.php"><i class="fas fa-monument"></i> Budaya</a></li>
+                <li><a href="kontak.php"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- Gallery Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/sec-hero.jpg');">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Galeri Foto</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Kumpulan momen dan aktivitas di Dusun Karen</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Gallery Filter -->
+        <div class="gallery-controls animate__animated animate__fadeIn">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+                <button class="filter-btn" data-filter="wisata">Wisata</button>
+                <button class="filter-btn" data-filter="budaya">Budaya</button>
+                <button class="filter-btn" data-filter="umkm">UMKM</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid (statis) -->
+        <div class="gallery-grid">
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="umkm">
+                <a href="assets/images/galeri1.jpg" data-lightbox="gallery" data-title="Warung Kelontong">
+                    <img src="assets/images/galeri1.jpg" alt="Warung Kelontong">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Warung Kelontong</h3>
+                            <span class="gallery-link">UMKM</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="umkm">
+                <a href="assets/images/galeri2.jpg" data-lightbox="gallery" data-title="Bengkel Wanto">
+                    <img src="assets/images/galeri2.jpg" alt="Bengkel Wanto">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Bengkel Wanto</h3>
+                            <span class="gallery-link">UMKM</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
+                <a href="assets/images/galeri3.jpg" data-lightbox="gallery" data-title="Pendataan UMKM oleh KKN AA 83 034 UPN Veteran Yogyakarta">
+                    <img src="assets/images/galeri3.jpg" alt="Upacara Adat">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Pendataan UMKM oleh KKN AA 83 034 UPN Veteran Yogyakarta</h3>
+                            <span class="gallery-link">Kegiatan</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
+                <a href="assets/images/galeri4.jpg" data-lightbox="gallery" data-title="Belajar Bersama Anak anak Dusun Karen">
+                    <img src="assets/images/galeri4.jpg" alt="Produk UMKM">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Belajar Bersama Anak anak Dusun Karen</h3>
+                            <span class="gallery-link">Kegiatan</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
+                <a href="assets/images/galeri5.jpg" data-lightbox="gallery" data-title="Senam Pagi Bersama">
+                    <img src="assets/images/galeri5.jpg" alt="Senam Pagi Bersama">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Kegiatan Belajar Bahasa Inggrisi</h3>
+                            <span class="gallery-link">Kegiatan</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="wisata">
+                <a href="assets/images/galeri6.jpg" data-lightbox="gallery" data-title="Pemandangan Sawah">
+                    <img src="assets/images/galeri6.jpg" alt="Pemandangan Sawah">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Pemandangan Sawah</h3>
+                            <span class="gallery-link">Wisata</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="budaya">
+                <a href="assets/images/galeri7.jpg" data-lightbox="gallery" data-title="Tari Tradisional">
+                    <img src="assets/images/galeri7.jpg" alt="Tari Tradisional">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tari Tradisional</h3>
+                            <span class="gallery-link">Budaya</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="umkm">
+                <a href="assets/images/galeri8.jpg" data-lightbox="gallery" data-title="Kerajinan Tangan">
+                    <img src="assets/images/galeri8.jpg" alt="Kerajinan Tangan">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Kerajinan Tangan</h3>
+                            <span class="gallery-link">UMKM</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Dusun Karen</h4>
+                    <p>Dusun Karen adalah desa wisata yang kaya akan budaya dan keindahan alam. Kami mempertahankan tradisi sambil berkembang bersama zaman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="profil.php">Profil Desa</a></li>
+                        <li><a href="berita.php">Berita Terkini</a></li>
+                        <li><a href="galeri.php">Galeri Foto</a></li>
+                        <li><a href="kontak.php">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i> +62 821-4521-9022</li>
+                        <li><i class="fas fa-envelope"></i> desasurojoyo.magelangkab.go.id</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosial Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/forji.4g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LS 2025 Dusun Karen. KKN UPN Veteran Yogyakarta.</p>
+                <p> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('show');
+        });
+
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Set active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                // Filter items
+                galleryItems.forEach(item => {
+                    if(filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Initialize Lightbox with caption from title attribute
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'showImageNumberLabel': true,
+            'disableScrolling': true,
+            'albumLabel': "Gambar %1 dari %2"
+        });
+
+        // Masonry layout for gallery
+        function initMasonry() {
+            const gallery = document.querySelector('.gallery-grid');
+            const gap = 20; // Match your CSS gap
+            let rowHeight = 250;
+            
+            if(window.innerWidth > 768) {
+                gallery.style.position = 'relative';
+                
+                let columns;
+                if(window.innerWidth > 1200) {
+                    columns = 3;
+                } else {
+                    columns = 2;
+                }
+                
+                const itemWidth = (gallery.offsetWidth - (gap * (columns - 1))) / columns;
+                const positions = Array(columns).fill(0);
+                
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    const minPosition = Math.min(...positions);
+                    const columnIndex = positions.indexOf(minPosition);
+                    
+                    item.style.position = 'absolute';
+                    item.style.width = `${itemWidth}px`;
+                    item.style.left = `${columnIndex * (itemWidth + gap)}px`;
+                    item.style.top = `${minPosition}px`;
+                    
+                    positions[columnIndex] += item.offsetHeight + gap;
+                });
+                
+                gallery.style.height = `${Math.max(...positions)}px`;
+            } else {
+                gallery.style.position = '';
+                gallery.style.height = '';
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    item.style.position = '';
+                    item.style.width = '';
+                    item.style.left = '';
+                    item.style.top = '';
+                });
+            }
+        }
+        
+        // Initialize and recalculate on resize
+        window.addEventListener('load', initMasonry);
+        window.addEventListener('resize', initMasonry);
+    </script>
+</body>
+</html>

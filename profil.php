@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Dusun Karen - Desa Wisata Budaya</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <!-- Logo gambar di samping judul -->
+            <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
+            <div class="logo-text">
+                <h1>Dusun Karen</h1>
+                <p>Desa Surojoyo Kecamatan Candimulyo</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.php" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="profil.php"><i class="fas fa-info-circle"></i> Profil</a></li>
+                <li><a href="galeri.php"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="umkm.php"><i class="fas fa-store"></i> UMKM</a></li>
+                <li><a href="budaya.php"><i class="fas fa-monument"></i> Budaya</a></li>
+                <li><a href="kontak.php"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- Profile Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/sec-hero.jpg');">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Profil Dusun Karen</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Mengenal lebih dekat sejarah dan kehidupan masyarakat Dusun Karen</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Sejarah Section -->
+        <section class="profile-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-landmark"></i> Sejarah Dusun</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <p>Dusun Karen, yang sekarang menjadi bagian dari Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, memiliki sejarah yang terkait erat dengan seorang pejuang dari Keraton Yogyakarta bernama Demang Suro.</p>
+                    <p>Pada masa penjajahan Belanda, sekitar tahun 1600-an, Demang Suro berjuang melawan penjajah hingga ke desa lain, yaitu Desa Surodadi. Setelah selesai berjuang, ia menetap dan dimakamkan di dusun yang kemudian diberi nama Dusun Surojoyo, yang dulunya merupakan Krajan Desa Surojoyo. Makam Demang Suro hingga kini masih dikeramatkan oleh penduduk setempat.</p>
+                    <p>Nama Surojoyo sendiri memiliki makna keberanian (Suro) dan kemenangan/kejayaan (Joyo), mencerminkan semangat perjuangan Demang Suro. Dusun Karen, sebagai bagian dari Surojoyo, juga turut menjadi saksi bisu dari sejarah perjuangan tersebut.</p>
+                </div>
+                <div class="profile-image">
+                    <img src="assets/images/sejarah-dusun.jpg" alt="Sejarah Dusun Karen" class="rounded-image">
+                    <p class="image-caption">Foto Keindahan dari Dusun Karen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geografis Section -->
+        <section class="profile-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-map-marked-alt"></i> Kondisi Geografis</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="profile-content reverse">
+                <div class="profile-text">
+                    <p>Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang memiliki iklim tropis basah yang ditandai dengan suhu rata-rata tahunan sebesar 25,62°C dan kelembaban udara tinggi mencapai 82%. Curah hujan rata-rata mencapai 2.589 mm per tahun dengan sekitar 121 hari hujan, menjadikan wilayah ini tergolong sangat basah dan mendukung aktivitas pertanian sepanjang tahun. Kecepatan angin relatif rendah, yaitu 1,8 knot, menunjukkan kondisi atmosfer yang tenang.</p>
+                    <p>Berdasarkan klasifikasi iklim, Candimulyo termasuk tipe B2 menurut Oldeman, tipe I menurut Mohr, dan tipe B menurut Schmidt-Ferguson, yang semuanya menunjukkan dominasi bulan basah dalam setahun. Ketinggian wilayah ±437 mdpl juga memengaruhi suhu yang lebih sejuk dibanding dataran rendah. Pola hari tanpa hujan relatif pendek karena distribusi hujan merata, sehingga musim kemarau di wilayah ini tidak berlangsung ekstrem. Kondisi iklim tersebut sangat menguntungkan bagi pertanian dan kehidupan masyarakat, meskipun kelembaban tinggi perlu diantisipasi dalam pengelolaan lingkungan dan kesehatan.</p>
+                    <div class="geo-features">
+                        <div class="geo-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Daerah Perbukitan</span>
+                        </div>
+                        <div class="geo-item">
+                            <i class="fas fa-water"></i>
+                            <span>Sungai Karen</span>
+                        </div>
+                        <div class="geo-item">
+                            <i class="fas fa-tree"></i>
+                            <span>Hutan Lindung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <img src="assets/images/peta-dusun.jpg" alt="Peta Dusun Karen" class="rounded-image">
+                    <p class="image-caption">Peta wilayah Dusun Karen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demografi Section -->
+        <section class="profile-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-users"></i> Demografi</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">878</div>
+                    <div class="stat-label">Jiwa</div>
+                    <div class="stat-desc">Total Penduduk</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">275</div>
+                    <div class="stat-label">KK</div>
+                    <div class="stat-desc">Kartu Keluarga</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">433</div>
+                    <div class="stat-label">Laki-Laki</div>
+                    <div class="stat-desc">Gender</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">445</div>
+                    <div class="stat-label">Perempuan</div>
+                    <div class="stat-desc">Gender</div>
+                </div>
+            </div>
+            <div class="demografi-desc">
+                <p>Keadaan pertanian di Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, menunjukkan bahwa meskipun memiliki lahan cukup luas, sebagian besar berupa tegalan yang belum dimanfaatkan secara optimal akibat keterbatasan air, akses, tenaga kerja, dan modal. Sebagian warga hanya menanam tanaman musiman atau membiarkan lahan kosong, padahal potensinya cukup besar untuk dikembangkan menjadi pertanian hortikultura, tanaman tahan kering, atau agroforestri dengan dukungan pelatihan, permodalan, dan irigasi sederhana. Di sektor perikanan, meskipun tidak tersedia fasilitas kolam desa, beberapa warga melakukan budidaya ikan lele secara mandiri di kolam terpal di pekarangan rumah. Kegiatan ini masih bersifat individu dan skala kecil, namun memiliki potensi untuk dikembangkan sebagai sumber penghasilan alternatif dan mendukung ketahanan pangan keluarga.</p>
+                <p>Di sektor home industri, masyarakat mengembangkan usaha kecil seperti produksi makanan ringan potil, yang menjadi salah satu jajanan khas daerah, serta singkong dan talas, yang menghasilkan keripik khas daerah. Kedua produk ini tidak hanya dikonsumsi secara lokal tetapi juga berpotensi untuk dikembangkan sebagai komoditas unggulan dusun.</p>
+            </div>
+        </section>
+
+        <!-- Pemerintahan Section -->
+        <section class="profile-section animate__animated animate__fadeIn">
+            <div class="section-header">
+                <h2><i class="fas fa-university"></i> Pemerintahan Dusun</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="government-grid">
+                <div class="government-card">
+                    <div class="government-image">
+                        <img src="assets/images/kepala-dusun.jpg" alt="Kepala Dusun">
+                    </div>
+                    <div class="government-info">
+                        <h3>Bapak Jamal</h3>
+                        <p class="position">Kepala Dusun Karen</p>
+                        <p class="period">Masa Jabatan: 2020-2025</p>
+                        <p class="bio">Lahir dan besar di Dusun Karen, beliau aktif memajukan pendidikan dan ekonomi masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Dusun Karen</h4>
+                    <p>Dusun Karen adalah desa wisata yang kaya akan budaya dan keindahan alam. Kami mempertahankan tradisi sambil berkembang bersama zaman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="profil.php">Profil Desa</a></li>
+                        <li><a href="berita.php">Berita Terkini</a></li>
+                        <li><a href="galeri.php">Galeri Foto</a></li>
+                        <li><a href="kontak.php">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i> +62 821-4521-9022</li>
+                        <li><i class="fas fa-envelope"></i> desasurojoyo.magelangkab.go.id</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosial Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/forji.4g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LS 2025 Dusun Karen. KKN UPN Veteran Yogyakarta.</p>
+                <p> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

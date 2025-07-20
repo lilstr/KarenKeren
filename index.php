@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusun Karen - Desa Wisata Budaya</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <!-- Logo gambar di samping judul -->
+            <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
+            <div class="logo-text">
+                <h1>Dusun Karen</h1>
+                <p>Desa Surojoyo Kecamatan Candimulyo</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.php" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="profil.php"><i class="fas fa-info-circle"></i> Profil</a></li>
+                <li><a href="galeri.php"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="umkm.php"><i class="fas fa-store"></i> UMKM</a></li>
+                <li><a href="budaya.php"><i class="fas fa-monument"></i> Budaya</a></li>
+                <li><a href="kontak.php"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate__animated animate__fadeIn">
+            <h2>Selamat Datang di Official Website Dusun Karen</h2>
+            <p>Mengenal lebih dekat keindahan alam, budaya, dan potensi dusun kami</p>
+            <a href="profil.php" class="btn btn-explore">Jelajahi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured News -->
+<section class="featured-section">
+    <h3 class="section-title"><i class="fas fa-map-marked-alt"></i> Peta Dusun Karen</h3>
+    <div class="custom-map-wrapper">
+        <!-- Container untuk peta custom -->
+        <div class="custom-map-container">
+            <div class="embed-map-fixed">
+                <div class="embed-map-container">
+                    <iframe 
+                        class="embed-map-frame" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Karen%20Surojoyo%20Kec.%20Candimulyo%20Kabupaten%20Magelang%20Jawa%20Tengah&t=k&z=14&ie=UTF8&iwloc=B&output=embed"
+                        aria-label="Peta Lokasi Dusun Karen">
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Panel informasi peta -->
+            <div class="map-info-panel">
+                <h4>Lokasi Dusun Karen</h4>
+                <div class="map-description">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Karen, Surojoyo, Kec. Candimulyo, Kabupaten Magelang, Jawa Tengah</p>
+                    <p><i class="fas fa-info-circle"></i> Dusun Karen terletak di wilayah Kabupaten Magelang dengan pemandangan alam pegunungan yang indah.</p>
+                    
+                    <div class="map-features">
+                        <h5><i class="fas fa-landmark"></i> Fasilitas Umum:</h5>
+                        <ul>
+                            <li><i class="fas fa-school"></i> MI Arrosydin Karen Surojoyo</li>
+                            <li><i class="fas fa-clinic-medical"></i> Posyandu Karen</li>
+                            <li><i class="fas fa-mosque"></i> Masjid Nurul Islam</li>
+                            <li><i class="fas fa-store"></i> Warung dan Toko Kelontong</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- UMKM Section -->
+        <section class="featured-section">
+            <h3 class="section-title"><i class="fas fa-store"></i> UMKM Unggulan</h3>
+            <div class="umkm-grid">
+                <div class="umkm-card animate__animated animate__fadeIn">
+                    <img src="assets/images/umkm1.jpg" alt="Kerajinan Tangan">
+                    <h4>Pabrik Potil Pak Teguh</h4>
+                    <p>Potil merupakan makanan khas daerah Magelang</p>
+                </div>
+                <div class="umkm-card animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+                    <img src="assets/images/umkm2.jpg" alt="Madu Hutan">
+                    <h4>Pabrik Tahu</h4>
+                    <p>Pabrik Tahu tradisional</p>
+                </div>
+                <div class="umkm-card animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+                    <img src="assets/images/umkm3.jpg" alt="Kopi Dusun">
+                    <h4>Eco Roso</h4>
+                    <p>Toko bermacam kerupuk olahan sendiri</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="umkm.php" class="btn-view-all">Lihat Semua UMKM <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Dusun Karen</h4>
+                    <p>Dusun Karen adalah desa wisata yang kaya akan budaya dan keindahan alam. Kami mempertahankan tradisi sambil berkembang bersama zaman.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="profil.php">Profil Desa</a></li>
+                        <li><a href="berita.php">Berita Terkini</a></li>
+                        <li><a href="galeri.php">Galeri Foto</a></li>
+                        <li><a href="kontak.php">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dusun Karen, Desa Surojoyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i> +62 821-4521-9022</li>
+                        <li><i class="fas fa-envelope"></i> desasurojoyo.magelangkab.go.id</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sosial Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/forji.4g?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LS 2025 Dusun Karen. KKN UPN Veteran Yogyakarta.</p>
+                <p> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('show');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
