@@ -933,31 +933,51 @@ body {
     }
 }
 
+/* SEMBUNYIKAN MENU DI MOBILE */
 @media (max-width: 768px) {
-    .main-nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: var(--white);
-        width: 100%;
-        flex-direction: column;
-        box-shadow: var(--shadow);
-        transition: var(--transition);
-        padding: 20px 0;
-    }
-    
-    .main-nav ul.show {
-        left: 0;
-    }
-    
-    .main-nav a {
-        padding: 15px;
-        justify-content: center;
-    }
-    
-    .mobile-menu-toggle {
-        display: block;
-    }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  .main-nav ul.show {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Sembunyikan menu desktop default */
+  .main-nav {
+    position: relative;
+  }
+}
+
+/* DI LAYAR LEBAR, TAMPILKAN MENU SEPERTI BIASA */
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+  }
+}
+
     
     .hero {
         height: 70vh;
