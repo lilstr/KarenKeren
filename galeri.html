@@ -16,26 +16,27 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <!-- Logo gambar di samping judul -->
             <img src="assets/images/logo.png" alt="Logo Dusun Karen" class="logo-image">
             <div class="logo-text">
                 <h1>Dusun Karen</h1>
                 <p>Desa Surojoyo Kecamatan Candimulyo</p>
             </div>
         </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        
         <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
-                <li><a href="profil.html"><i class="fas fa-info-circle"></i> Profil</a></li>
-                <li><a href="galeri.html"><i class="fas fa-images"></i> Galeri</a></li>
-                <li><a href="umkm.html"><i class="fas fa-store"></i> UMKM</a></li>
-                <li><a href="budaya.html"><i class="fas fa-monument"></i> Budaya</a></li>
-                <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="umkm.html">UMKM</a></li>
+                <li><a href="budaya.html">Budaya</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </nav>
-        <div class="mobile-menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
     </div>
 </header>
 
@@ -117,35 +118,35 @@
                     </div>
                 </a>
             </div>
-            <div class="gallery-item animate__animated animate__fadeIn" data-category="wisata">
-                <a href="assets/images/galeri6.jpg" data-lightbox="gallery" data-title="Pemandangan Sawah">
-                    <img src="assets/images/galeri6.jpg" alt="Pemandangan Sawah">
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
+                <a href="assets/images/galeri6.jpg" data-lightbox="gallery" data-title="Menghias Tumblr">
+                    <img src="assets/images/galeri6.jpg" alt="Menghias Tumblr">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                            <h3>Pemandangan Sawah</h3>
-                            <span class="gallery-link">Wisata</span>
+                            <h3>Mnghias Tumblr untuk meminimalisir sampah botol plastik di MI Dusun Karen</h3>
+                            <span class="gallery-link">Kegiatan</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="gallery-item animate__animated animate__fadeIn" data-category="budaya">
-                <a href="assets/images/galeri7.jpg" data-lightbox="gallery" data-title="Tari Tradisional">
-                    <img src="assets/images/galeri7.jpg" alt="Tari Tradisional">
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
+                <a href="assets/images/galeri7.jpg" data-lightbox="gallery" data-title="Sosialisasi Damkar Kab Magelang">
+                    <img src="assets/images/galeri7.jpg" alt="Sosialisasi Damkar Kab Magelang">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                            <h3>Tari Tradisional</h3>
-                            <span class="gallery-link">Budaya</span>
+                            <h3>Sosialisasi Pemadam Kebakaran Kabupaten Magelang di MI Dusun Karen</h3>
+                            <span class="gallery-link">Kegiatan</span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="gallery-item animate__animated animate__fadeIn" data-category="umkm">
+            <div class="gallery-item animate__animated animate__fadeIn" data-category="kegiatan">
                 <a href="assets/images/galeri8.jpg" data-lightbox="gallery" data-title="Kerajinan Tangan">
-                    <img src="assets/images/galeri8.jpg" alt="Kerajinan Tangan">
+                    <img src="assets/images/galeri8.jpg" alt="Kerajinan Tangan Manik Manik">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                            <h3>Kerajinan Tangan</h3>
-                            <span class="gallery-link">UMKM</span>
+                            <h3>Kerajinan Tangan Manik Manik di MI Dusun Karen</h3>
+                            <span class="gallery-link">Kegiatan</span>
                         </div>
                     </div>
                 </a>
@@ -196,33 +197,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     
     <script>
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-nav ul').classList.toggle('show');
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle (consolidated version)
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.main-nav ul');
+    const menuIcon = mobileToggle?.querySelector('i');
+    
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', function() {
+            // Toggle menu visibility
+            mobileMenu.classList.toggle('show');
+            
+            // Toggle icon between bars and times
+            if (menuIcon) {
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-times');
+            }
+            
+            // Toggle aria-expanded attribute for accessibility
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
         });
+    }
 
-        // Gallery Filter
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Set active button
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
+    // Smooth scrolling for anchor links (improved version)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                e.preventDefault();
                 
-                const filterValue = button.getAttribute('data-filter');
-                
-                // Filter items
-                galleryItems.forEach(item => {
-                    if(filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
+                // Close mobile menu if open
+                if (mobileMenu && mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                    if (menuIcon) {
+                        menuIcon.classList.replace('fa-times', 'fa-bars');
                     }
+                    if (mobileToggle) {
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    }
+                }
+                
+                // Smooth scroll to target
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
-            });
+                
+                // Update URL without page jump
+                if (history.pushState) {
+                    history.pushState(null, null, targetId);
+                } else {
+                    location.hash = targetId;
+                }
+            }
         });
+    });
+});
 
         // Initialize Lightbox with caption from title attribute
         lightbox.option({
