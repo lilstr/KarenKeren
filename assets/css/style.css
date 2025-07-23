@@ -32,130 +32,59 @@ body {
     padding: 0 15px;
 }
 
-.navbar {
+navbar {
     background-color: var(--white);
     box-shadow: var(--shadow);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-/* Logo Styles */
-.logo {
+.logo h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo-image {
-    height: 50px;
-    width: auto;
-}
-
-.logo-text h1 {
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    margin: 0;
-    line-height: 1.2;
-}
-
-.logo-text p {
+.logo p {
     color: var(--text-light);
-    font-size: 0.7rem;
-    margin: 0;
+    font-size: 0.8rem;
 }
 
-/* Navigation Styles */
-.main-nav {
-    transition: var(--transition);
-}
-
-.nav-list {
+.main-nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 5px;
 }
 
-.nav-list a {
+.main-nav a {
     text-decoration: none;
     color: var(--text-color);
-    padding: 8px 12px;
+    padding: 10px 15px;
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     transition: var(--transition);
-    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+.main-nav a i {
     font-size: 0.9rem;
 }
 
-.nav-list a:hover,
-.nav-list a.active {
-    color: var(--white);
-    background-color: var(--primary-color);
-}
-
-.nav-list a i {
-    font-size: 0.9rem;
-}
-
-/* Mobile Menu Toggle */
 .mobile-menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: var(--primary-color);
     font-size: 1.5rem;
     cursor: pointer;
-    padding: 5px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 5px 0;
-    }
-    
-    .mobile-menu-toggle {
-        display: block;
-        order: 2;
-    }
-    
-    .main-nav {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        order: 3;
-        transition: max-height 0.3s ease;
-    }
-    
-    .main-nav.active {
-        max-height: 500px;
-        padding: 10px 0;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .nav-list a {
-        padding: 10px 15px;
-        justify-content: center;
-    }
-    
-    .logo {
-        order: 1;
-    }
-    
-    .logo-text h1 {
-        font-size: 1.2rem;
-    }
-}
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
