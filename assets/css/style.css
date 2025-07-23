@@ -549,30 +549,41 @@ body {
 }
 
 
-.government-card {
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
+.government-grid {
     display: flex;
-    
+    justify-content: center;
+    padding: 20px;
+}
+
+.government-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.government-card:hover {
+    transform: translateY(-5px);
 }
 
 .government-icon {
-    font-size: 3rem; /* Adjust size as needed */
-    color: #333; /* Icon color */
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.government-info {
-    padding: 20px;
-    flex: 1;
+    color: #2c3e50; /* Warna gelap */
+    margin-bottom: 15px;
 }
 
 .government-info h3 {
-    color: var(--primary-color);
-    margin-bottom: 5px;
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.government-info .position {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 .position {
